@@ -1,4 +1,4 @@
-function DataTable() {
+const Footer = () => {
     return (
         <div className="table-responsive">
             <table className="table table-striped table-sm">
@@ -20,7 +20,13 @@ function DataTable() {
                         <td>15017.00</td>
                     </tr>
                 </tbody>
-                <tbody>
+                <tr>
+                        <td>22/04/2021</td>
+                        <td>Barry Allen</td>
+                        <td>34</td>
+                        <td>25</td>
+                        <td>15017.00</td>
+                    </tr>
                     <tr>
                         <td>22/04/2021</td>
                         <td>Barry Allen</td>
@@ -28,8 +34,6 @@ function DataTable() {
                         <td>25</td>
                         <td>15017.00</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
                         <td>22/04/2021</td>
                         <td>Barry Allen</td>
@@ -37,8 +41,6 @@ function DataTable() {
                         <td>25</td>
                         <td>15017.00</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
                         <td>22/04/2021</td>
                         <td>Barry Allen</td>
@@ -46,8 +48,6 @@ function DataTable() {
                         <td>25</td>
                         <td>15017.00</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
                         <td>22/04/2021</td>
                         <td>Barry Allen</td>
@@ -55,8 +55,6 @@ function DataTable() {
                         <td>25</td>
                         <td>15017.00</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
                         <td>22/04/2021</td>
                         <td>Barry Allen</td>
@@ -64,8 +62,6 @@ function DataTable() {
                         <td>25</td>
                         <td>15017.00</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
                         <td>22/04/2021</td>
                         <td>Barry Allen</td>
@@ -73,8 +69,6 @@ function DataTable() {
                         <td>25</td>
                         <td>15017.00</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
                         <td>22/04/2021</td>
                         <td>Barry Allen</td>
@@ -82,8 +76,6 @@ function DataTable() {
                         <td>25</td>
                         <td>15017.00</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
                         <td>22/04/2021</td>
                         <td>Barry Allen</td>
@@ -91,8 +83,6 @@ function DataTable() {
                         <td>25</td>
                         <td>15017.00</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
                         <td>22/04/2021</td>
                         <td>Barry Allen</td>
@@ -100,11 +90,12 @@ function DataTable() {
                         <td>25</td>
                         <td>15017.00</td>
                     </tr>
-                </tbody>
             </table>
         </div>
-    );
+
+
+
+    )
 }
 
-
-export default DataTable;
+export default Footer;
