@@ -1,7 +1,8 @@
 import Chart from 'react-apexcharts';
 
-function BarChart() {
-    
+
+const BarChart = () => {
+
     const options = {
         plotOptions: {
             bar: {
@@ -22,20 +23,21 @@ function BarChart() {
         ]
     };
     
-    
     return (
-        <Chart
-          options ={{...options, xaxis: mockData.labels }}
-          series ={mockData.series}
-          type="bar"
-          height="240"
-        />
+        <Chart 
         
+        options ={{...options, xaxis:mockData.labels}}
+        series={mockData.series}
+        type="bar"
+        height="240"
 
 
+
+        />
+
+        
 
 
     );
 }
-
 export default BarChart;
