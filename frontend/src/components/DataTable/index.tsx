@@ -1,5 +1,8 @@
+
 const Footer = () => {
     return (
+        <>
+        <h1>oi</h1>
         <div className="table-responsive">
             <table className="table table-striped table-sm">
                 <thead>
@@ -92,6 +95,7 @@ const Footer = () => {
                     </tr>
             </table>
         </div>
+        </>
 
 
 

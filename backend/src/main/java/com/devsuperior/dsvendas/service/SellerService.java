@@ -15,10 +15,10 @@ import com.devsuperior.dsvendas.repositories.SellerRepository;
 public class SellerService {
 	
 	@Autowired
-	private SellerRepository repository;
+	private SellerRepository sellerRepository;
 	
 	public List<SellerDTO> findAll() {
-		List<Sale> result = repository.findAll();
+		List<Sale> result = sellerRepository.findAll();
 		return result.stream().map (x -> new SellerDTO ()).collect(Collectors.toList());
 	}
 

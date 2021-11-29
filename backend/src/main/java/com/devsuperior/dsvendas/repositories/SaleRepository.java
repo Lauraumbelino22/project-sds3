@@ -9,9 +9,10 @@ import org.springframework.data.jpa.repository.Query;
 
 import com.devsuperior.dsvendas.dto.SaleSucessDTO;
 import com.devsuperior.dsvendas.dto.SaleSumDTO;
+import com.devsuperior.dsvendas.entities.Sale;
 import com.devsuperior.dsvendas.entities.Seller;
 
-public interface SaleRepository extends JpaRepository <Seller, Long> {
+public interface SaleRepository extends JpaRepository <Sale, Long> {
 
 	public static void main(String[] args) {
 		
