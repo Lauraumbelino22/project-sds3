@@ -9,30 +9,32 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+
 @Entity
-@Table(name="tb_sales")
+@Table(name = "tb_sales")
 public class Sale {
 	
 	@Id
-	@GeneratedValue(strategy =GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private Integer visited;
 	private Integer deals;
+	private Double amount;
 	private LocalDate date;
 	
 	@ManyToOne
-	@JoinColumn (name ="seller_id")
+	@JoinColumn(name ="seller_id")
 	private Seller seller;
 	
 	public Sale () {
 		
 	}
 
-	public Sale(Long id, Integer visited, Integer deals, LocalDate date, Seller seller) {
-		super();
+	public Sale(Long id, Integer visited, Integer deals, Double amount, LocalDate date, Seller seller) {
 		this.id = id;
 		this.visited = visited;
 		this.deals = deals;
+		this.amount = amount;
 		this.date = date;
 		this.seller = seller;
 	}
@@ -61,6 +63,14 @@ public class Sale {
 		this.deals = deals;
 	}
 
+	public Double getAmount() {
+		return amount;
+	}
+
+	public void setAmount(Double amount) {
+		this.amount = amount;
+	}
+
 	public LocalDate getDate() {
 		return date;
 	}
@@ -77,9 +87,4 @@ public class Sale {
 		this.seller = seller;
 	}
 
-	public Double getAmount() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
 }
