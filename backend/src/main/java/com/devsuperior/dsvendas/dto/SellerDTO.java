@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 import com.devsuperior.dsvendas.entities.Seller;
 
-public class SellerDTO implements Serializable {
+public class SellerDTO implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 	private Long id;
@@ -20,7 +20,7 @@ public class SellerDTO implements Serializable {
 	}
 	public SellerDTO(Seller entity) {
 		id = entity.getId();
-	    name=entity.getName();
+		name = entity.getName();
 	}
 
 	public Long getId() {
@@ -38,7 +38,5 @@ public class SellerDTO implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	
 
 }
