@@ -7,17 +7,12 @@ const Routes = () => {
         <BrowserRouter>
            <Switch>
                <Route path ="/" exact>
-
                    <Home />
-
                </Route>
                <Route path ="/dashboard">
                    <Dashboard />
                </Route>
-
            </Switch>
-
-
         </BrowserRouter>
     );
 }
