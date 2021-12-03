@@ -10,12 +10,15 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.GenericGenerator;
+
 @Entity
 @Table(name = "tb_sales")
 public class Sale {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GenericGenerator (strategy = "increment", name = "increment")
 	private Long id;
 	private Integer visited;
 	private Integer deals;
